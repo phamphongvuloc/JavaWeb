@@ -13,7 +13,7 @@ public class ConnectToDB {
         Connection cnn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            cnn = DriverManager.getConnection("jdbc:mysql://localhost/shopsach?useUnicode=yes&characterEncoding=UTF-8", "root", "root");
+            cnn = DriverManager.getConnection("jdbc:mysql://localhost/shopcancau?useUnicode=yes&characterEncoding=UTF-8", "root", "root");
         } catch (Exception ex) {
             System.err.println("Không kết nối được! Lỗi: " + ex.toString());
         }
